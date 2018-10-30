@@ -30,7 +30,7 @@ export SECRET_KEY=some pseudo random characters
 python manage.py runserver
 
 #production server
-gunicorn 'app.app:create_app()' --access-logfile errors.log --error-logfile access.log
+gunicorn 'app:create_app()' --access-logfile access.log --error-logfile error.log
 ```
 
 #### Create fake users
